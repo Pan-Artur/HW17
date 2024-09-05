@@ -4,7 +4,7 @@ const buttonEl = document.querySelector("#button");
 const textEl = document.querySelector("#text");
 
 const changeButtonEl = function()  {
-    buttonEl.onclick = () => buttonEl.textContent = textEl.value;
+    buttonEl.textContent = textEl.textContent;
 };
 
 changeButtonEl();
@@ -16,15 +16,7 @@ const imageEl = document.querySelector(".image");
 const checkboxEl = document.querySelector(".checkbox");
 
 const changeImageEl = () => {
-    checkboxEl.onclick = function() {
-        if (checkboxEl.checked) {
-            title.textContent = "Тепер ви в Сахарі, якщо ви нажмете на чекбокс, ви назад повернетеся до айсбергів";
-            imageEl.src = "./images/sahara.jpg";
-        } else {
-            title.textContent = "Натисніть на чекбокс, і ви з'явитеся у теплій Сахарі";
-            imageEl.src = "./images/kriga.jpg";
-        }
-    }
+    imageEl.src = "./images/sahara.jpg";
 };
 
 changeImageEl();
