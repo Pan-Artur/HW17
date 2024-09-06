@@ -3,11 +3,7 @@
 const buttonEl = document.querySelector("#button");
 const textEl = document.querySelector("#text");
 
-const changeButtonEl = function()  {
-    buttonEl.textContent = textEl.textContent;
-};
-
-changeButtonEl();
+buttonEl.textContent = textEl.textContent;
 
 //Task 2
 
@@ -15,11 +11,7 @@ const title = document.querySelector(".title");
 const imageEl = document.querySelector(".image");
 const checkboxEl = document.querySelector(".checkbox");
 
-const changeImageEl = () => {
-    imageEl.src = "./images/sahara.jpg";
-};
-
-changeImageEl();
+imageEl.src = "./images/sahara.jpg";
 
 //Task 3
 
